@@ -54,7 +54,8 @@ plt.savefig("multiNormalCompare.jpg")
 plt.savefig("multiNormalCompare.eps")
 plt.show()
 ```
-<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/multivariateSample.png" width =45% height =45% div align="left"><img src="https://github.com/Junjun1guo/PyNUTS/blob/main/multiNormalCompare.png" width =50% height =50% div align="left"> <br>  
+<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/multivariateSample.png" width =45% height =45% div align="left"><img src="https://github.com/Junjun1guo/PyNUTS/blob/main/multiNormalCompare.png" width =50% height =50% div align="left">
+
 ______
 ## Example 2. Generalized linear regression  
 
@@ -82,8 +83,8 @@ linearInstance.plotAutoCorr()
 linearInstance.summary()
 ```  
 <img src="https://github.com/Junjun1guo/PyNUTS/blob/main/plotTrace_linear.png" width =45% height =45% div align="left">
-<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/plotPosterior_linear.png" width =45% height =45% div align="left"><br>
-   
+<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/plotPosterior_linear.png" width =45% height =45% div align="left">
+
 ______
 ## Example 3. Logistic regression  
 ```python
