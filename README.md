@@ -55,8 +55,8 @@ plt.savefig("multiNormalCompare.eps")
 plt.show()
 ```
 <img src="https://github.com/Junjun1guo/PyNUTS/blob/main/multivariateSample.png" width =45% height =45% div align="left"><img src="https://github.com/Junjun1guo/PyNUTS/blob/main/multiNormalCompare.png" width =45% height =45% div align="right">
-______      
-## Example 2. Generalized linear regression 
+______
+## Example 2. Generalized linear regression  
 
 ```python
 import numpy as np
