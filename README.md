@@ -54,4 +54,4 @@ plt.savefig("multiNormalCompare.jpg")
 plt.savefig("multiNormalCompare.eps")
 plt.show()
 ```
-<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/multivariateSample.png" width =40% height =40% div align="center">
+<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/multivariateSample.png" width =60% height =60% div align="center">
