@@ -9,3 +9,8 @@ Environemet: Successfully excucted in python 3.8
 ______
 ## required modules
 [numpy](https://numpy.org/)   [matplotlib](https://matplotlib.org/)   [arviz](https://arviz-devs.github.io/arviz/)   [tqdm](https://github.com/tqdm/tqdm)   [pytorch](https://pytorch.org/)   [records](https://github.com/kennethreitz/records)
+______
+## Tutorials
+1. Download the zip file
+2. Make sure the required modules are installed, and run the examples in pyNUTSExample.py file.
+3. Currently, the module provides Markov chain Monte Corlo (MCMC) sampling for multivariate normal distribution,generalized linear regression ang logistic regression.
