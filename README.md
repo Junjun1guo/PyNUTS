@@ -8,5 +8,4 @@ Environemet: Successfully excucted in python 3.8
 ##########################################################################
 ______
 ## required modules
-([numpy](https://numpy.org/))
-numpy matplotlib  arviz tqdm  pytorch     records
+[numpy](https://numpy.org/)   [matplotlib](https://matplotlib.org/)   [arviz](https://arviz-devs.github.io/arviz/)   [tqdm](https://github.com/tqdm/tqdm)   [pytorch](https://pytorch.org/)   [records](https://github.com/kennethreitz/records)
