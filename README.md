@@ -14,3 +14,44 @@ ______
 1. Download the zip file
 2. Make sure the required modules are installed, and run the examples in pyNUTSExample.py file.
 3. Currently, the module provides Markov chain Monte Corlo (MCMC) sampling for multivariate normal distribution,generalized linear regression ang logistic regression.
+
+## Multivariate normal distibution 
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from PyNUTS import MultiNormal
+
+meanArray = np.array([[1.2,-3.4]])
+covArray = np.array([[2.1,-1.2],[-1.2,5.2]])
+numSample = 5000
+numBurning = 5000
+initalThetaArray = np.random.normal(0, 1, 2)
+testInstance=MultiNormal(meanArray, covArray, numSample, numBurning, initalThetaArray)
+nutsSamples=testInstance.sample()
+print('Mean')
+print(np.mean(nutsSamples, axis=0))
+print('Stddev')
+print(np.std(nutsSamples, axis=0))
+sampleValues = np.random.multivariate_normal(meanArray[0, :],covArray, size=numSample)
+plt.plot(sampleValues[:, 0], sampleValues[:, 1], 'b.')
+plt.plot(nutsSamples[:, 0], nutsSamples[:, 1], 'r+')
+plt.savefig("multivariateSample.jpg")
+plt.savefig("multivariateSample.eps")
+plt.show()
+plt.subplot(2, 2, 1)
+plt.hist(nutsSamples[:, 0], bins=50,color='red')
+plt.xlabel("x1-nutsSamples")
+plt.subplot(2, 2, 2)
+plt.hist(sampleValues[:, 0], bins=50, color='blue')
+plt.xlabel("x1-npSamples")
+plt.subplot(2, 2, 3)
+plt.hist(nutsSamples[:, 1], bins=50,color='red')
+plt.xlabel("x2-nutsSamples")
+plt.subplot(2, 2, 4)
+plt.hist(sampleValues[:, 1], bins=50, color='blue')
+plt.xlabel("x2-npSamples")
+plt.savefig("multiNormalCompare.jpg")
+plt.savefig("multiNormalCompare.eps")
+plt.show()
+```
+<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/multivariateSample.png" width =40% height =40% div align="center">
