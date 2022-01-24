@@ -83,8 +83,8 @@ linearInstance.plotAutoCorr()
 linearInstance.summary()
 ```  
 <img src="https://github.com/Junjun1guo/PyNUTS/blob/main/plotTrace_linear.png" width =45% height =45% div align="left">
-<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/plotPosterior_linear.png" width =45% height =45% div align="left">\
-
+<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/plotPosterior_linear.png" width =45% height =45% div align="left"><br />
+<br />
 ______
 ## Example 3. Logistic regression  
 ```python
@@ -103,7 +103,7 @@ logisticInstance.summary()
 ```   
 <img src="https://github.com/Junjun1guo/PyNUTS/blob/main/plotTrace_logistic.png" width =45% height =45% div align="left">
 <img src="https://github.com/Junjun1guo/PyNUTS/blob/main/plotPosterior_logistic.png" width =45% height =45% div align="left">
-
+<br />
 
 
 
