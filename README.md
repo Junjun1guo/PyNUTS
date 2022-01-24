@@ -15,7 +15,7 @@ ______
 2. Make sure the required modules are installed, and run the examples in pyNUTSExample.py file.
 3. Currently, the module provides Markov chain Monte Corlo (MCMC) sampling for multivariate normal distribution,generalized linear regression ang logistic regression.
 
-## Multivariate normal distibution 
+## Example 1. Multivariate normal distibution 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -56,3 +56,30 @@ plt.show()
 ```
 <img src="https://github.com/Junjun1guo/PyNUTS/blob/main/multivariateSample.png" width =45% height =45% div align="left">
 <img src="https://github.com/Junjun1guo/PyNUTS/blob/main/multiNormalCompare.png" width =45% height =45% div align="right">
+
+## Example 2. Generalized linear regression
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from PyNUTS import LinearRegression
+
+n = 100
+alpha = 2
+beta = 5
+gamma=4
+sigma = 0.2
+x1 = np.linspace(0, 1, n)
+x2=np.array([np.random.normal(0, sigma,1)[0]*each for each in x1])
+y = alpha + beta * x1 + gamma * x2+np.random.normal(0, sigma, n)
+x=[[1.0,x1[i],x2[i]] for i in range(n)]
+numSampling=15000
+numBurning=20000
+linearInstance=LinearRegression(x,y,numSampling,numBurning)
+linearInstance.sample()
+linearInstance.plotTrace()
+linearInstance.plotPosterior()
+linearInstance.plotAutoCorr()
+linearInstance.summary()
+```
+<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/plotTrace_linear.png" width =45% height =45% div align="left">
+<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/plotPosterior_linear.png" width =45% height =45% div align="right">
