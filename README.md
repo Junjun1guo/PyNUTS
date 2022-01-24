@@ -81,7 +81,27 @@ linearInstance.plotPosterior()
 linearInstance.plotAutoCorr()
 linearInstance.summary()
 ```  
-
-
 <img src="https://github.com/Junjun1guo/PyNUTS/blob/main/plotTrace_linear.png" width =45% height =45% div align="left">
-<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/plotPosterior_linear.png" width =45% height =45% div align="right">
+<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/plotPosterior_linear.png" width =45% height =45% div align="right"><br />
+______
+## Example 3. Logistic regression  
+```python
+xy=np.loadtxt("logisticRegression.txt")
+x=list(xy[:,0])
+y=list(xy[:,1])
+x=[[1.0,np.log(each)] for each in x]
+numSampling=20000
+numBurning=5000
+logisticInstance=LogisticRegression(x,y,numSampling,numBurning)
+logisticInstance.sample()
+logisticInstance.plotTrace()
+logisticInstance.plotPosterior()
+logisticInstance.plotAutoCorr()
+logisticInstance.summary()
+```
+<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/plotTrace_logistic.png" width =45% height =45% div align="left">
+<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/plotPosterior_logistic.png" width =45% height =45% div align="right"><br />
+
+
+
+
