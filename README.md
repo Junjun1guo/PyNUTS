@@ -13,8 +13,9 @@ ______
 ## Tutorials
 1. Download the zip file
 2. Make sure the required modules are installed, and run the examples in pyNUTSExample.py file.
-3. Currently, the module provides Markov chain Monte Corlo (MCMC) sampling for multivariate normal distribution,generalized linear regression ang logistic regression.
+3. Currently, the module provides Markov chain Monte Corlo (MCMC) sampling for multivariate normal distribution,generalized linear regression ang logistic regression.    
 ______
+<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/multivariateSample.png" width =45% height =45% div align="left"><img src="https://github.com/Junjun1guo/PyNUTS/blob/main/multiNormalCompare.png" width =45% height =45% div align="right">
 ## Example 1. Multivariate normal distibution 
 ```python
 import numpy as np
@@ -54,7 +55,7 @@ plt.savefig("multiNormalCompare.jpg")
 plt.savefig("multiNormalCompare.eps")
 plt.show()
 ```
-<img src="https://github.com/Junjun1guo/PyNUTS/blob/main/multivariateSample.png" width =45% height =45% div align="left"><img src="https://github.com/Junjun1guo/PyNUTS/blob/main/multiNormalCompare.png" width =45% height =45% div align="right">
+
 ______
 ## Example 2. Generalized linear regression  
 
